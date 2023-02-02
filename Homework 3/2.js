@@ -9,5 +9,5 @@ function greeting(userName){
 
 const nameUser = prompt('Enter your name: ');
 
-greeting(nameUser)
-//I have strange memories of this code... 
+greeting(nameUser) 
+//I have strange memories of this code...  

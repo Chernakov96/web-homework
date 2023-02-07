@@ -1,0 +1,19 @@
+-- create
+CREATE TABLE STUDENTS (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO STUDENTS VALUES (0001, 'Clark', 30, 'Moscow');
+INSERT INTO STUDENTS VALUES (0002, 'Kent', 20, 'Astana');
+INSERT INTO STUDENTS VALUES (0003, 'Sabrina', 25, 'Sochi');
+INSERT INTO STUDENTS VALUES (0004, 'Maria', 45, 'Bishkek');
+INSERT INTO STUDENTS VALUES (0005, 'Anastasia', 35, 'Belgrad');
+INSERT INTO STUDENTS VALUES (0006, 'Georg', 35, 'Moscow');
+
+
+-- fetch 
+SELECT name FROM STUDENTS WHERE age >= 18 AND age < 30 AND address LIKE '%Moscow%';

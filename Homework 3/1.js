@@ -11,11 +11,12 @@
 // может получиться "длинная дробь".
 
 function convertCelsiusToFarenheit(celsTemperature) {
-    const Farenheit = Math.round(((9 / 5) * celsTemperature + 32)*100)/100;
-    return Farenheit
+    const farenheit = (9 / 5) * celsTemperature + 32
+    //const farenheit = Math.round(((9 / 5) * celsTemperature + 32)*100)/100;
+    return farenheit
 }
 
-const tempCelsius = parseInt(prompt('Enter temperature in celsius: '));
+const tempCelsius = Number.parseFloat(prompt('Enter temperature in celsius: '));
 
 const tempFarenheit = convertCelsiusToFarenheit(tempCelsius);
 
